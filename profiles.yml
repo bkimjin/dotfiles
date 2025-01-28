@@ -1,0 +1,13 @@
+corp:
+  outputs:
+    dev:
+      account: random.account
+      authenticator: externalbrowser
+      database: dev
+      role: data_engineer
+      schema: core
+      threads: 4
+      type: snowflake
+      user: <user.email>@email.com
+      warehouse: development_wh
+  target: dev

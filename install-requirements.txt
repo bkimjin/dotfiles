@@ -1,0 +1,13 @@
+# Must be the same versions as in dagster/setup.py
+dagster==1.9.6
+dagster-dbt==0.25.6
+dagster-fivetran==0.25.6
+dagster-slack==0.25.6
+dagster-webserver==1.9.6
+dbt-osmosis==0.13.2
+snowflake-connector-python==3.12.3
+# Must be the same version as dagster/setup.py
+dbt-snowflake==1.8
+duo_universal
+sqlfluff-templater-dbt==3.2.5
+pre-commit==3.8.0
