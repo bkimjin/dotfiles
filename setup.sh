@@ -6,12 +6,12 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PYTHON_VERSION=$(cat .python-version)
 
 
-# Install brew
-sh $DOTFILES_DIR/install/brew.sh
+# Setup brew
+sh $DOTFILES_DIR/setup/brew.sh
 
 
 # Setup git
-source $DOTFILES_DIR/install/git.sh
+source $DOTFILES_DIR/setup/git.sh
 
 
 # Setup Virtual Environment
@@ -28,13 +28,13 @@ pip install -r install-requirements.txt
 pre-commit install
 
 
-# Install oh my zsh and plugins
-sh $DOTFILES_DIR/install/oh-my-zsh.sh
+# Setup oh my zsh and plugins
+sh $DOTFILES_DIR/setup/oh-my-zsh.sh
 
 
-# Install and configure powerlevel10k
-sh $DOTFILES_DIR/install/powerlevel10k.sh $DOTFILES_DIR
+# Setup and configure powerlevel10k
+sh $DOTFILES_DIR/setup/powerlevel10k.sh $DOTFILES_DIR
 
 
 # dbt Setup
-sh $DOTFILES_DIR/install/dbt.sh $DOTFILES_DIR $github_email
+sh $DOTFILES_DIR/setup/dbt.sh $DOTFILES_DIR $github_email
